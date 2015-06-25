@@ -10,5 +10,5 @@
 #  file: path=servername: "test1.com", documentroot:
 
 - name: test
-  debug: msg="DEBUG {{ apache_vhosts }}"
+  debug: msg="DEBUG {{ apache_vhosts[0] }}"
   tags: t2
