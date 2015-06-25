@@ -26,7 +26,7 @@
 - name: Add apache vhosts configuration.
   template:
     src: "vhosts-{{ apache_vhosts_version }}.conf.j2"
-    dest: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts.servername }}.conf"
+    dest: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts[0].servername }}.conf"
     owner: root
     group: root
     mode: 0644
