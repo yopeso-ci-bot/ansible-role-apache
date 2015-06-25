@@ -9,18 +9,18 @@ apache_vhosts_filename: "vhosts.conf"
 
 apache_vhosts:
   # Additional properties: 'serveradmin, serveralias, extra_parameters'.
-  - {servername: "test1.com", documentroot: "/var/www/"}
+  - {servername: "test1.com", documentroot: "/var/www/hosts/"}
 
-apache_vhosts_ssl: []
+apache_vhosts_ssl:
   # Additional properties: 'serveradmin, extra_parameters'.
-  # - {
-  #   servername: "local.dev",
-  #   documentroot: "/var/www/html",
-  #   certificate_file: "/path/to/certificate.crt",
-  #   certificate_key_file: "/path/to/certificate.key",
+   - {
+     servername: "test1.com",
+     documentroot: "/var/www/hosts/",
+     certificate_file: "/etc/apache2/ssl/STAR_yopeso_com.crt",
+     certificate_key_file: "/etc/apache2/ssl/star_yopeso_com.key",
   #   # Optional.
   #   certificate_chain_file: "/path/to/certificate_chain.crt"
-  # }
+   }
 
 apache_ssl_protocol: "All -SSLv2 -SSLv3"
 apache_ssl_cipher_suite: "AES256+EECDH:AES256+EDH"
