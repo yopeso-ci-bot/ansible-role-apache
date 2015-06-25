@@ -26,6 +26,7 @@ DirectoryIndex index.php index.html
 {% endfor %}
 
 {# Set up SSL VirtualHosts #}
+{% if enable_ssl %}
 {% for vhost in apache_vhosts_ssl %}
 <VirtualHost *:{{ apache_listen_port_ssl }}>
   ServerName {{ vhost.servername }}
@@ -59,3 +60,4 @@ DirectoryIndex index.php index.html
 </VirtualHost>
 
 {% endfor %}
+{%endif%}
