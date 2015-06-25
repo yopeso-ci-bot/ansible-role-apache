@@ -11,4 +11,4 @@
 
 - name: test
   debug: msg={{ apache_vhosts }}
-  tags: t1
+  tags: t2
