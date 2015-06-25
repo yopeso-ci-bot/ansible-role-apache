@@ -35,7 +35,7 @@
 
 - name: Add vhost symlink in sites-enabled.
   file:
-    src: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts_filename }}"
-    dest: "{{ apache_conf_path }}/sites-enabled/{{ apache_vhosts_filename }}"
+    src: "{{ apache_conf_path }}/sites-available/{{ apache_vhosts[0].servername }}.conf"
+    dest: "{{ apache_conf_path }}/sites-enabled/{{ apache_vhosts[0].servername }}.conf"
     state: link
   when: apache_create_vhosts
