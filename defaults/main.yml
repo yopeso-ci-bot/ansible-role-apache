@@ -1,4 +1,5 @@
 ---
+enable_ssl: True
 apache_enablerepo: ""
 
 apache_listen_port: 80
