@@ -6,5 +6,5 @@
   apt: "name={{ item }} state=installed"
   with_items: apache_packages
 
-- name: Make root directory for the project
+- name: Make project root directory
   file: path={{ apache_vhosts.documentroot }} state=directory
