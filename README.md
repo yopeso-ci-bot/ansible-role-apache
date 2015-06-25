@@ -32,7 +32,7 @@ If set to true, a vhosts file, managed by this role's variables (see below), wil
 
 Add a set of properties per virtualhost, including `servername` (required), `documentroot` (required), `serveradmin` (optional), `serveralias` (optional) and `extra_parameters` (optional: you can add whatever additional configuration lines you'd like in here).
 
-    apache_vhosts_ssl: []
+    enable_ssl: True
 
 No SSL vhosts are configured by default, but you can add them using the same pattern as `apache_vhosts`, with a few additional directives, like the following example:
 
