@@ -11,7 +11,7 @@ apache_vhosts:
   # Additional properties: 'serveradmin, serveralias, extra_parameters'.
   - {servername: "test1.com", documentroot: "/var/www/"}
 
-apache_vhosts_ssl: []
+#apache_vhosts_ssl: []
   # Additional properties: 'serveradmin, extra_parameters'.
   # - {
   #   servername: "local.dev",
