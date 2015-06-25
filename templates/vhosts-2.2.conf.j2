@@ -8,12 +8,12 @@ DirectoryIndex index.php index.html
 {% if vhost.serveralias is defined %}
   ServerAlias {{ vhost.serveralias }}
 {% endif %}
-  DocumentRoot {{ vhost.documentroot }}
+  DocumentRoot {{ vhost.documentroot }}{{ vhost.servername }}
 
 {% if vhost.serveradmin is defined %}
   ServerAdmin {{ vhost.serveradmin }}
 {% endif %}
-  <Directory "{{ vhost.documentroot }}">
+  <Directory "{{ vhost.documentroot }}{{ vhost.servername }}">
     AllowOverride All
     Options -Indexes FollowSymLinks
     Order allow,deny
