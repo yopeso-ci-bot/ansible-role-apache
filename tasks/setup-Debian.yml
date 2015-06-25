@@ -6,5 +6,8 @@
   apt: "name={{ item }} state=installed"
   with_items: apache_packages
 
-- name: Make project root directory
-  debug: msg="{{ apache_vhosts }}"
+#- name: Make project root directory
+#  file: path=servername: "test1.com", documentroot:
+
+- name: test
+  debug: msg={{ apache_vhosts }}
