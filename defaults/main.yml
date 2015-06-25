@@ -15,7 +15,7 @@ apache_vhosts_ssl:
   # Additional properties: 'serveradmin, extra_parameters'.
    - {
      servername: "test1.com",
-     documentroot: "/var/www/hosts/"{{ servername }},
+     documentroot: "/var/www/hosts/{{ apache_vhosts_ssl/servername }}",
      certificate_file: "/etc/apache2/ssl/STAR_yopeso_com.crt",
      certificate_key_file: "/etc/apache2/ssl/star_yopeso_com.key",
   #   # Optional.
