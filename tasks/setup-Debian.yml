@@ -11,4 +11,4 @@
 
 - name: test
   debug: msg="DEBUG {{ apache_vhosts.documentroot }}"
-  tags: t2
+  tags: t1
