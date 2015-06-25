@@ -7,4 +7,4 @@
   with_items: apache_packages
 
 - name: Make project root directory
-  file: path={{ apache_vhosts.documentroot }} state=directory
+  file: path={{ vhosts.documentroot }} state=directory
