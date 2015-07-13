@@ -39,4 +39,3 @@
     dest: "{{ apache_conf_path }}/sites-enabled/{{ apache_vhosts[0].servername }}.conf"
     state: link
   when: apache_create_vhosts
-  tags: t1
