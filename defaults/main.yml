@@ -17,8 +17,8 @@ apache_vhosts_ssl:
    - {
      servername: "test1.com",
      documentroot: "/var/www/hosts/",
-     certificate_file: "/etc/apache2/ssl/STAR_yopeso_com.crt",
-     certificate_key_file: "/etc/apache2/ssl/star_yopeso_com.key",
+     certificate_file: "/etc/apache2/ssl/CRT_NAME",
+     certificate_key_file: "/etc/apache2/ssl/KEy",
   #   # Optional.
   #   certificate_chain_file: "/path/to/certificate_chain.crt"
    }
